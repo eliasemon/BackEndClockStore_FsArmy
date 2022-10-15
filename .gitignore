@@ -109,7 +109,9 @@ coverage
 .env
 license.txt
 exports
-yarn.lock
 *.cache
 build
 .strapi-updater.json
+
+
+yarn.lock
