@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_all_products_product_variants",
+  "info": {
+    "displayName": "productVariants",
+    "icon": "band-aid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string"
+    },
+    "ImageOfVariant": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    },
+    "variantCode": {
+      "type": "string",
+      "required": true
+    },
+    "InStock": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    }
+  }
+}
