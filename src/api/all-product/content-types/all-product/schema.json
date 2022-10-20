@@ -23,7 +23,8 @@
     "variants": {
       "type": "component",
       "repeatable": true,
-      "component": "all-products.product-variants"
+      "component": "all-products.product-variants",
+      "required": false
     },
     "brand": {
       "type": "relation",
@@ -50,6 +51,17 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::catagory.catagory"
+    },
+    "sub_catagories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-catagory.sub-catagory"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
