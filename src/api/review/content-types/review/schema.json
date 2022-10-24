@@ -32,7 +32,7 @@
       "default": "This Product is awesome.",
       "required": true
     },
-    "targeted_prduct": {
+    "targeted_product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::all-product.all-product"

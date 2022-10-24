@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "User_Ref": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "orderId": {
+      "type": "uid",
+      "required": true
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "ordersItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-item-or-user-cart.product-variants-item-fortable",
+      "required": true
+    },
+    "delivaryAddress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    }
+  }
+}

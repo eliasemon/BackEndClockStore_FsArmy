@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_order_item_or_user_cart_product_variants_item_fortables",
+  "info": {
+    "displayName": "productVariantsItemFortable"
+  },
+  "options": {},
+  "attributes": {
+    "product_ref": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::all-product.all-product"
+    },
+    "variantsId": {
+      "type": "integer",
+      "default": -1,
+      "required": true
+    },
+    "product_quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
