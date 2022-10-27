@@ -6,6 +6,7 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
+<<<<<<< HEAD
 module.exports = createCoreController('api::catagory.catagory',({strapi})=>({
     async find(ctx){
         try {
@@ -32,3 +33,6 @@ module.exports = createCoreController('api::catagory.catagory',({strapi})=>({
         }
     }
 }));
+=======
+module.exports = createCoreController('api::catagory.catagory');
+>>>>>>> parent of 7267632 (Customize find method for catagory)
