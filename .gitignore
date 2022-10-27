@@ -115,6 +115,4 @@ build
 
 
 yarn.lock
-.temp/
-config/env/
-config/database.js
+
