@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "User_ref": {
+    "user_ref": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
@@ -44,6 +44,9 @@
     "uuid": {
       "type": "uid",
       "targetField": "address"
+    },
+    "tittle": {
+      "type": "string"
     }
   }
 }

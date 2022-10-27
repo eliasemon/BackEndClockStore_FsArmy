@@ -1,7 +1,8 @@
 {
   "collectionName": "components_order_item_or_user_cart_product_variants_item_fortables",
   "info": {
-    "displayName": "productVariantsItemFortable"
+    "displayName": "productVariantsItemFortable",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,8 +21,27 @@
       "required": true,
       "default": 0
     },
-    "price": {
-      "type": "integer"
+    "unitPrice": {
+      "type": "decimal"
+    },
+    "itemsTotalPrice": {
+      "type": "decimal"
+    },
+    "variantCode": {
+      "type": "string"
+    },
+    "variantColor": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "integer",
+      "required": true
+    },
+    "productName": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
     }
   }
 }

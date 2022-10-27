@@ -63,12 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "addresses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::address.address",
-      "mappedBy": "User_ref"
-    },
     "phoneNumber": {
       "type": "string",
       "required": true,
@@ -91,6 +85,12 @@
       "relation": "oneToOne",
       "target": "api::users-cart.users-cart",
       "inversedBy": "user_ref"
+    },
+    "addresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::address.address",
+      "mappedBy": "user_ref"
     }
   }
 }

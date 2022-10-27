@@ -9,7 +9,8 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::catagory.catagory',({strapi})=>({
     async find(ctx){
         try {
-            ctx.query = { ...ctx.query, local: 'en' };
+            ctx.query = { ...ctx.query, local: 'en' , populate : "*"};
+            console.log(ctx.query)
             const { data , meta } = await super.find(ctx);
             const newData = data.map((data)=>{
                 return {

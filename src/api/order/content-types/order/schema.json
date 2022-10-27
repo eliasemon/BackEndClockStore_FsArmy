@@ -12,14 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "User_Ref": {
+    "user_ref": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
-    },
-    "orderId": {
-      "type": "uid",
-      "required": true
     },
     "totalPrice": {
       "type": "decimal"
@@ -28,12 +24,29 @@
       "type": "component",
       "repeatable": true,
       "component": "order-item-or-user-cart.product-variants-item-fortable",
-      "required": true
+      "required": false
     },
     "delivaryAddress": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::address.address"
+    },
+    "isConfirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "shipingCost": {
+      "type": "decimal",
+      "required": true
+    },
+    "totalVat": {
+      "type": "decimal",
+      "required": true
+    },
+    "vatInPercentages": {
+      "type": "decimal",
+      "max": 100,
+      "required": true
     }
   }
 }
