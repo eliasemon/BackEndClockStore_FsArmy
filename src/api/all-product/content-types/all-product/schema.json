@@ -60,7 +60,7 @@
     "description": {
       "type": "richtext"
     },
-    "price": {
+    "defualtPrice": {
       "type": "decimal"
     }
   }
